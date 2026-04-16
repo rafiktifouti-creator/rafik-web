@@ -155,7 +155,7 @@ hr {
 
 .works ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 15px;
     list-style-type: none;
     align-items: center;
@@ -264,8 +264,12 @@ footer {
 @media (max-width: 1023px) {
     header {
         margin-left: 1rem;
-        margin-right: 1rem;
         padding-right: 2rem;
+    }
+    .nav ul{
+        text-align: center;
+        align-items: center;
+        gap: 0.5rem;
     }
 
     .sect {
