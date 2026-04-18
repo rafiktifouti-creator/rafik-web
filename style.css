@@ -223,7 +223,7 @@ hr {
 
 .contact .emailphone:hover {
 
-    transform: scale(1.1);
+    transform: scale(1.02);
 
 }
 
@@ -293,6 +293,11 @@ footer {
         align-items: center;
         gap: 0.6rem;
     }
+    .works li img {
+    width: 185px;
+    height: 185px;
+    
+}
 
     .sect {
         flex-direction: column;
