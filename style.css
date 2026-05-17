@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    transition: 0.5s;
+    font-family: "Poppins", serif;
+}
+body{
+    background-image: linear-gradient(135deg,rgb(206, 206, 206),rgb(218, 218, 218));
+}
+hr{
+    opacity: 5%;
+    color: red;
+}
+header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgba(199, 235, 255, 0.5);
+    backdrop-filter: blur(1px);
+    position: fixed;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 0.5rem;
+    padding: 0.4rem 2rem ;
+    left: 50%;
+    width: 60%;
+    z-index: 100;
+    border-radius: 2rem;
+    animation: anime 0.5s ease forwards;
+}
+@keyframes anime{
+    from{
+        opacity: 0;
+        transform: translate(-50%,-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(-50%,0);
+    }
+}
+.logo{
+    width: 50px;
+}
+header a{
+    color: #000;
+    font-size: 18px;
+}
+header a:hover{
+    color: rgb(255, 38, 0);
+    text-decoration: underline;
+    transform: scale(1.01);
+
+}
+.nav{
+    display: flex;
+    gap: 2rem;
+}
+.sect{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem auto;
+}
+.sectsup{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.name{
+    font-size: 3rem;
+}
+.title{
+    font-size: 4rem;
+    color: rgb(209, 23, 23);
+}
+.sectbtn{
+    display: flex;
+    gap: 1rem;
+   
+    margin-top: 1.5rem;
+}
+.sectbtn :hover{
+    transform: scale(1.1);
+}
+.hireme{
+    background: rgb(209, 23, 23);
+    border-radius: 2rem; 
+    color: #000;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+.sectimg{
+    width: 290px;
+}
+.aboutme{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem auto;
+    gap: 9rem;
+}
+.textabout{
+    display: flex;
+    flex-direction: column;
+}
+.texttitle{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+.abouttitle{
+    color: rgb(209, 23, 23);
+}
+.aboutp{
+    text-align: start;
+    word-spacing: 4px;
+    max-width: 600px;
+}
+.aboutimg{
+    width: 300px;
+}
+.works{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.textwork{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem auto;
+}
+.projecttitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.works ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+.works li{
+    border-radius: 16px;
+    background-color: rgba(49, 49, 49, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 1rem 2rem;
+}
+.works li img{
+    width: 300px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.works li:hover{
+    transform: scale(1.1);
+}
+.textcontact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+.contacttitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20rem;
+    margin-right: 5rem;
+}
+.emailphone:hover{
+    transform: scale(1.02);
+}
+.contact h3,.contact a{
+    color: black;
+}
+.emailphone{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+.socialmedia a{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background-color: rgba(57, 62, 70, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+}
+.socialmedia a:hover{
+    background-color: rgba(59, 64, 72, 0.4);
+    transform: scale(1.1);
+}
+.socialmedia img{
+    width: 24px;
+}
+footer{
+    padding-bottom: 1rem;
+    text-align: center;
+}
+@media(max-width: 1000px){
+    header{
+        width: 95%;
+        margin: 0.3;
+        padding: 0.1rem 1rem;
+    }
+    .nav a{
+        font-size: 12px;
+    }
+    .nav{
+        gap: 0.6rem;
+    }
+    .sect{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .name,.title{
+        font-size: 2rem;
+    }
+    .aboutme{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+    .textabout{
+        align-items: center;
+        margin: 0rem 4rem;
+        gap: 1rem;
+    }
+    .aboutname,.abouttitle{
+        font-size: 2rem;
+    }
+    .aboutimg{
+        width: 300px;
+    }
+    .works{
+        flex-direction: column;
+        padding: 0;
+    }
+    .works ul{
+        flex-direction: column;
+        gap: 1;
+    }
+    .works li img{
+        width: 220px;
+    }
+    .textwork{
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .projecttitle{
+        margin-left: 1rem;
+    }
+    .textcontact{
+        margin: 5rem 5rem;
+        gap: 2rem;
+    }
+    .contact{
+        flex-direction: column;
+        gap: 2rem;
+        margin-right: 0;
+    }
+    .socialmedia{
+        flex-wrap: wrap;
+        gap: 2.2rem;
+    }
+    .projecttitle h1{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    .emailphone h3{
+        font-size: 17px;
+    }
+}
