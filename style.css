@@ -59,6 +59,34 @@ header a:hover{
     display: flex;
     gap: 2rem;
 }
+.typing{
+    width:0;
+    color:white;
+    font-size:40px;
+    font-family:Arial;
+    white-space:nowrap;
+    overflow:hidden;
+    border-right:4px solid rgb(51, 0, 0);
+    animation:
+    typing 4s steps(20) infinite alternate,
+    blink .7s infinite;
+}
+@keyframes typing{
+    0%{
+        width:0;
+    }
+    50%{
+        width:360px;
+    }
+    100%{
+        width:0;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
 .sect{
     display: flex;
     justify-content: space-evenly;
@@ -303,5 +331,11 @@ footer{
     }
     .emailphone h3{
         font-size: 17px;
+    }
+    @keyframes typing{
+   
+    50%{
+        width:185px;
+    }   
     }
 }
